@@ -1,5 +1,10 @@
-<% provide :title, t(".title") %>
-<h1><%= t ".header" %></h1>
-<p>
-  <%= sanitize t(".content", link: link_to(t(".text"),Settings.rails_tutorial)) %>
-</p>
+<div class="center jumbotron">
+  <% provide :title, t(".title") %>
+  <h1><%= t ".header" %></h1>
+  <h2>
+    <%= sanitize t(".content", link: link_to(t(".text"),Settings.rails_tutorial)) %>
+  </h2>
+  <%= link_to t(".sign_up"), signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to image_tag("download.png", alt: "Rails logo", class: "image"),
+    Settings.rails %>
+</div>

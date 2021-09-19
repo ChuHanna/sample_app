@@ -13,5 +13,13 @@ vi:
       title: "Trang chủ"
       content: "Đây là %{link} - trang chủ của ứng dụng mẫu."
       text: "Hướng dẫn sử dụng Ruby on Rails"
+      sign_up: "Đăng ký ngay"
+  users:
+    new:
+      header: "Đăng ký"
+      title: "Đăng ký"
+      content: "Tìm tôi trong app/views/users/new.html.erb"
+      text: "Đây sẽ là trang đăng ký cho người dùng mới."
   base_title: "Sample App hướng dẫn Ruby on Rails"
   thanks: "Cảm ơn bạn đã tham gia và có một ngày tuyệt vời!"
+  login: "Đăng nhập"
