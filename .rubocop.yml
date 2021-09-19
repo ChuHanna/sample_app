@@ -1,8 +1,3 @@
-inherit_from:
-  - .rubocop_todo.yml
-  - .rubocop_enabled.yml
-  - .rubocop_disabled.yml
-
 # This is rubocop configuration file for Sun-Asterisk's coding style. Enabling and disabling is configured
 # in separate files. This file adds all other parameters apart from Enabled.
 
@@ -10,7 +5,9 @@ inherit_from:
 require: rubocop-rails
 
 # Put the following files into the same directory as this file.
-
+inherit_from:
+  - .rubocop_enabled.yml
+  - .rubocop_disabled.yml
 
 # Common configuration.
 AllCops:
