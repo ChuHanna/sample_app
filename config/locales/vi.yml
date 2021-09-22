@@ -1,0 +1,17 @@
+vi:
+  static_pages:
+    help:
+      header: "Giúp đỡ"
+      title: "Giúp đỡ"
+      content: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại
+        %{link_page}. Để nhận trợ giúp về sample app này, hãy xem
+        %{link_book}."
+      text_page: "Trang trợ giúp hướng dẫn về Rails"
+      text_book:  "Sách <em> Trợ giúp hướng dẫn về Rails </em>"
+    home:
+      header: "Sample App"
+      title: "Trang chủ"
+      content: "Đây là %{link} - trang chủ của ứng dụng mẫu."
+      text: "Hướng dẫn sử dụng Ruby on Rails"
+  base_title: "Sample App hướng dẫn Ruby on Rails"
+  thanks: "Cảm ơn bạn đã tham gia và có một ngày tuyệt vời!"
