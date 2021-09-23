@@ -2,17 +2,20 @@
 <html>
   <head>
     <title><%= full_title yield(:title) %> </title>
-    ​<meta charset="utf-8">
-   ​ <%= csrf_meta_tags %>
-   ​ <%= csp_meta_tag %>
-
-   ​ <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
-   ​ <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", media: "all",
+      "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+    <%= render "layouts/shim" %>
  ​ </head>
 
  ​ <body>
-    <%= link_to "Vietnamese", locale:"vi" %> 
+    <%= render "layouts/header" %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <%= link_to "Vietnamese", locale:"vi" %>
     <%= link_to "English", locale:"en" %>
-   ​ <%= yield %>
  ​ </body>
 </html>

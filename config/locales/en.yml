@@ -44,4 +44,13 @@ en:
       title: "Home"
       content: "This is the home page for the %{link} sample application."
       text: "Ruby on Rails Tutorial"
+      sign_up: "Sign up now!"
+  users:
+    new:
+      header: "Sign up"
+      title: "Sign up"
+      content: "Find me in app/views/users/new.html.erb"
+      text: "This will be a signup page for new users."
   base_title: "Ruby on Rails Tutorial Sample App"
+  thanks: "Thanks for joining and have a great day!"
+  login: "Login"
