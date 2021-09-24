@@ -54,3 +54,8 @@ en:
   base_title: "Ruby on Rails Tutorial Sample App"
   thanks: "Thanks for joining and have a great day!"
   login: "Login"
+  form: "The form contains"
+  welcome: "Welcome to the Sample App!"
+  error: "Error"
+  conf: "Confirmation"
+  create: "Create my account"

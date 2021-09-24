@@ -23,3 +23,8 @@ vi:
   base_title: "Sample App hướng dẫn Ruby on Rails"
   thanks: "Cảm ơn bạn đã tham gia và có một ngày tuyệt vời!"
   login: "Đăng nhập"
+  form: "Biểu mẫu chứa"
+  welcome: "Chào mừng bạn đến với Sample App!"
+  error: "Lỗi"
+  conf: "Xác nhận"
+  create: "Tạo tài khoản của tôi"

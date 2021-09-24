@@ -4,5 +4,5 @@ rails_tutorial: "https://www.railstutorial.org/"
 valid: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 min_email: 20
 max_email: 255
-max_name: 10
+max_name: 20
 min_pass: 6
