@@ -1,3 +1,8 @@
 rails_help: "https://www.railstutorial.org/help"
 rails_book: "https://www.railstutorial.org/book"
 rails_tutorial: "https://www.railstutorial.org/"
+valid: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+min_email: 20
+max_email: 255
+max_name: 10
+min_pass: 6

@@ -39,7 +39,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: pink3;
+  color: $blue1;
 }
 
 p {
@@ -57,7 +57,7 @@ center h1 {
   float: left;
   margin-right: 10px;
   front-size: 1.7em;
-  color:pink1;
+  color: $pink1;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -65,7 +65,7 @@ center h1 {
 }
 
 #logo:hover {
-  color: pink2;
+  color: $pink2;
   text-decoration: none
 }
 
