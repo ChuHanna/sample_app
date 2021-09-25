@@ -2,6 +2,7 @@ class User < ApplicationRecord
   # de chuan hoa su ton tai cho name va email
   VALID_EMAIL_REGEX = Settings.valid
 
+  PROPERTIES = %i(name email password password_confirmation).freeze
   before_save :downcase_email
 
   validates :email, presence: true,
@@ -15,6 +16,6 @@ class User < ApplicationRecord
 
   private
   def downcase_email
-    self.email = email.downcase
+    email.downcase!
   end
 end
