@@ -20,6 +20,23 @@ vi:
       title: "Đăng ký"
       content: "Tìm tôi trong app/views/users/new.html.erb"
       text: "Đây sẽ là trang đăng ký cho người dùng mới."
+  sessions:
+    new:
+      header: "Đăng nhập"
+      title: "Đăng nhập"
+      text1: "Người dùng mới?"
+      text2: "Đăng ký ngay!"
+    form:
+      content: "Đăng nhập"
+  layouts:
+    header:
+      user: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
+      login: "Đăng nhập"
+      sampleapp: "Sample app"
   base_title: "Sample App hướng dẫn Ruby on Rails"
   thanks: "Cảm ơn bạn đã tham gia và có một ngày tuyệt vời!"
   login: "Đăng nhập"
@@ -28,3 +45,4 @@ vi:
   error: "Lỗi"
   conf: "Xác nhận"
   create: "Tạo tài khoản của tôi"
+  danger: " Email không hợp lệ/Mật khẩu không hợp lệ"

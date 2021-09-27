@@ -51,6 +51,23 @@ en:
       title: "Sign up"
       content: "Find me in app/views/users/new.html.erb"
       text: "This will be a signup page for new users."
+  sessions:
+    new:
+      header: "Log in"
+      title: "Log in"
+      text1: "New user?"
+      text2: "Sign up now!"
+    form:
+      content: "Log in"
+  layouts:
+    header:
+      user: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
+      login: "Log in"
+      sampleapp: "Sample app"
   base_title: "Ruby on Rails Tutorial Sample App"
   thanks: "Thanks for joining and have a great day!"
   login: "Login"
@@ -59,3 +76,4 @@ en:
   error: "Error"
   conf: "Confirmation"
   create: "Create my account"
+  danger: "Invalid  email/ password combination"
