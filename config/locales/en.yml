@@ -81,6 +81,15 @@ en:
       logout: "Log out"
       login: "Log in"
       sampleapp: "Sample app"
+  user_mailer:
+    account_activation:
+      header: "Sample App"
+      greeting: "Hi"
+      intro: "Welcome to the Sample App!
+        Click on the link below to activate your account:"
+      link: "Activate"
+      info: "Account activation"
+
   base_title: "Ruby on Rails Tutorial Sample App"
   thanks: "Thanks for joining and have a great day!"
   login: "Login"
@@ -96,3 +105,9 @@ en:
   deletefail: "Delete fail!"
   usernotfound: "User not found"
   updatefaild: "Update faild"
+  activatedinfo: "Please check your mail to activate your account."
+  activatedfail: "Account not activated.
+    Check your email for the activation link."
+  activatedsuccess: "Account activated!"
+  activatedinvalid: "Invalid activation link"
+  activetion: "Active account""

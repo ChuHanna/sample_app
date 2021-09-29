@@ -27,10 +27,11 @@ class User < ApplicationRecord
     update_attribute :remember_digest, nil
   end
 
-  def authenticated? remember_token
-    return false unless remember_token
+  def authenticated? attribute, token
+    digest = send "#{attribute}_digest"
+    return false if digest.nil?
 
-    BCrypt::Password.new(remember_digest).is_password? remember_token
+    BCrypt::Password.new(digest).is_password? token
   end
 
   class << self
@@ -46,6 +47,15 @@ class User < ApplicationRecord
              end
       BCrypt::Password.create string, cost: cost
     end
+  end
+
+  def activate
+    update_attribute :activated, true
+    update_attribute :activated_at, Time.zone.now
+  end
+
+  def send_mail_activate
+    UserMailer.account_activation(self).deliver_now
   end
 
   private
