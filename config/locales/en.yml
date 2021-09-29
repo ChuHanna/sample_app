@@ -59,6 +59,7 @@ en:
       text2: "Sign up now!"
     form:
       content: "Log in"
+      remember: "Remember me on this computer"
   layouts:
     header:
       user: "Users"

@@ -28,6 +28,7 @@ vi:
       text2: "Đăng ký ngay!"
     form:
       content: "Đăng nhập"
+      remember: "Hãy nhớ tôi trên máy tính này"
   layouts:
     header:
       user: "Người dùng"
