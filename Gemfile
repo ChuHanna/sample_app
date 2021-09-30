@@ -30,6 +30,9 @@ gem "config"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "bootstrap-sass", "3.4.1"
 
+gem "bootstrap-kaminari-views" # giao dien dep cho phan trang
+# giup phan trang
+gem "kaminari"
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution
   # and get a debugger console
@@ -38,6 +41,7 @@ group :development, :test do
   gem "rubocop-checkstyle_formatter", require: false
   gem "rubocop-rails", "~> 2.3.2", require: false
 end
+gem "faker", "2.1.2"
 gem "rails-i18n"
 group :development do
   # Access an interactive console on exception

@@ -20,6 +20,18 @@ vi:
       title: "Đăng ký"
       content: "Tìm tôi trong app/views/users/new.html.erb"
       text: "Đây sẽ là trang đăng ký cho người dùng mới."
+      buttontext: "Tạo tài khoản của tôi"
+    edit:
+      title: "Chỉnh sửa user"
+      buttontext: "Lưu thay đổi"
+      text: "Cập nhật hồ sơ của bạn"
+      changeimage: "Thay đổi"
+    index:
+      title: "Tất cả người dùng"
+      text: "Tất cả người dùng"
+    user:
+      sure: "Bạn chắc chắn chứ?"
+      delete: "Xóa"
   sessions:
     new:
       header: "Đăng nhập"
@@ -47,3 +59,9 @@ vi:
   conf: "Xác nhận"
   create: "Tạo tài khoản của tôi"
   danger: " Email không hợp lệ/Mật khẩu không hợp lệ"
+  profileupdated: "Hồ sơ cá nhân đã cập nhật"
+  pleaselogin: "Xin vui lòng đăng nhập."
+  userdeleted: "Người dùng đã bị xóa"
+  deletefail: "Xóa không thành công!"
+  usernotfound: "Không tìm thấy user"
+  updatefaild: "Cập nhập không thành công"

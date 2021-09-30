@@ -51,6 +51,18 @@ en:
       title: "Sign up"
       content: "Find me in app/views/users/new.html.erb"
       text: "This will be a signup page for new users."
+      buttontext: "Create my account"
+    edit:
+      title: "Edit user"
+      buttontext: "Save changes"
+      text: "Update your profile"
+      changeimage: "Change"
+    index:
+      title: "All users"
+      text: "All users"
+    user:
+      sure: "You sure?"
+      delete: "delete"
   sessions:
     new:
       header: "Log in"
@@ -78,3 +90,9 @@ en:
   conf: "Confirmation"
   create: "Create my account"
   danger: "Invalid  email/ password combination"
+  profileupdated: "Profile updated"
+  pleaselogin: "Please log in."
+  userdeleted: "User deleted"
+  deletefail: "Delete fail!"
+  usernotfound: "User not found"
+  updatefaild: "Update faild"
