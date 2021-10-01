@@ -38,6 +38,7 @@ vi:
       title: "Đăng nhập"
       text1: "Người dùng mới?"
       text2: "Đăng ký ngay!"
+      forgotpass: "Quên mật khẩu"
     form:
       content: "Đăng nhập"
       remember: "Hãy nhớ tôi trên máy tính này"
@@ -50,6 +51,31 @@ vi:
       logout: "Đăng xuất"
       login: "Đăng nhập"
       sampleapp: "Sample app"
+  user_mailer:
+    account_activation:
+      header: "Sample App"
+      greeting: "Xin chào"
+      intro: "Chào mừng bạn đến với Sample App!
+        Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      link: "Kích hoạt"
+      info: "Kích hoạt tài khoản"
+    password_reset:
+      header: "Đặt lại mật khẩu"
+      resetpassword: "Đặt lại mật khẩu"
+      intro: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+      intro1: "Liên kết này sẽ hết hạn sau hai giờ.
+        Nếu bạn không yêu cầu đặt lại mật khẩu của mình,
+        vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ"
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      header: "Quên mật khẩu"
+      submit: "Nộp"
+    edit:
+      title: "Đặt lại mật khẩu"
+      header: "Đặt lại mật khẩu"
+      submit: "Cập nhật mật khẩu"
+      comfirmation: "Xác nhận"
   base_title: "Sample App hướng dẫn Ruby on Rails"
   thanks: "Cảm ơn bạn đã tham gia và có một ngày tuyệt vời!"
   login: "Đăng nhập"
@@ -65,3 +91,16 @@ vi:
   deletefail: "Xóa không thành công!"
   usernotfound: "Không tìm thấy user"
   updatefaild: "Cập nhập không thành công"
+  activatedinfo: "Vui lòng kiểm tra thư của bạn để kích hoạt tài khoản của bạn."
+  activatedfail: "Tài khoản chưa được kích hoạt.
+    Kiểm tra email của bạn để biết liên kết kích hoạt."
+  activatedsuccess: "Tài khoản đã được kích hoạt!"
+  activatedinvalid: "Liên kết kích hoạt không hợp lệ"
+  activetion: "Kích hoạt tài khoản"
+  resetinfo: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+  resetfail: "Không tìm thấy địa chỉ email"
+  passwordreset: "Đặt lại mật khẩu"
+  exprired: "Đặt lại mật khẩu đã hết hạn."
+  passwordresetsuccess: "Mật khẩu đã được đặt lại."
+  empty: "không thể để trống"
+  passwordresetfailed: "Đặt lại mật khẩu không thành công"

@@ -8,9 +8,14 @@ module SessionsHelper
   end
 
   def user_actived? user
-    log_in user
-    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-    redirect_back_or user
+    if user.activated?
+      log_in user
+      params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+      redirect_back_or user
+    else
+      flash[:warning] = t "activatedfail"
+      redirect_back_or root_url
+    end
   end
 
   def forget user

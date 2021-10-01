@@ -69,6 +69,7 @@ en:
       title: "Log in"
       text1: "New user?"
       text2: "Sign up now!"
+      forgotpass: "Forgot Password"
     form:
       content: "Log in"
       remember: "Remember me on this computer"
@@ -81,6 +82,32 @@ en:
       logout: "Log out"
       login: "Log in"
       sampleapp: "Sample app"
+  user_mailer:
+    account_activation:
+      header: "Sample App"
+      greeting: "Hi"
+      intro: "Welcome to the Sample App!
+        Click on the link below to activate your account:"
+      link: "Activate"
+      info: "Account activation"
+    password_reset:
+      header: "Password reset"
+      intro: "To reset your password click the link below:"
+      intro1: "This link will expire in two hours.
+        If you did not request your password to be reset, please ignore this email
+        and your password will stay as it is"
+      resetpassword: "Reset password"
+  password_resets:
+    new:
+      title: "Forgot password"
+      header: "Forgot password"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      header: "Reset password"
+      submit: "Update password"
+      comfirmation: "Confirmation"
+
   base_title: "Ruby on Rails Tutorial Sample App"
   thanks: "Thanks for joining and have a great day!"
   login: "Login"
@@ -96,3 +123,16 @@ en:
   deletefail: "Delete fail!"
   usernotfound: "User not found"
   updatefaild: "Update faild"
+  activatedinfo: "Please check your mail to activate your account."
+  activatedfail: "Account not activated.
+    Check your email for the activation link."
+  activatedsuccess: "Account activated!"
+  activatedinvalid: "Invalid activation link"
+  activetion: "Active account"
+  resetinfo: "Email sent with password reset instructions"
+  resetfail: "Email address not found"
+  passwordreset: "Password reset"
+  exprired: "Password reset has exprired."
+  passwordresetsuccess: "Password has been reset."
+  empty: "can't be empty"
+  passwordresetfailed: "Password reset failed"

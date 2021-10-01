@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
   before_save :downcase_email
   # tao ra ma xac thuc dong thoi thuc hien luu ca doan ma hoa cua ma xac thuc
   before_create :create_activation_digest
@@ -7,7 +7,7 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = Settings.valid
 
   PROPERTIES = %i(name email password password_confirmation).freeze
-
+  PASSWORD_PARAMS = %i(password password_confirmation)
   validates :email, presence: true,
     length: {minimum: Settings.min_email, maximum: Settings.max_email},
     format: {with: VALID_EMAIL_REGEX},
@@ -27,10 +27,11 @@ class User < ApplicationRecord
     update_attribute :remember_digest, nil
   end
 
-  def authenticated? remember_token
-    return false unless remember_token
+  def authenticated? attribute, token
+    digest = send "#{attribute}_digest"
+    return false if digest.nil?
 
-    BCrypt::Password.new(remember_digest).is_password? remember_token
+    BCrypt::Password.new(digest).is_password? token
   end
 
   class << self
@@ -46,6 +47,29 @@ class User < ApplicationRecord
              end
       BCrypt::Password.create string, cost: cost
     end
+  end
+
+  def activate
+    update_attribute :activated, true
+    update_attribute :activated_at, Time.zone.now
+  end
+
+  def send_mail_activate
+    UserMailer.account_activation(self).deliver_now
+  end
+
+  # tao ra doan ma token gan vao reset token
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.hours_pass_expired.hours.ago
   end
 
   private
