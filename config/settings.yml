@@ -10,3 +10,4 @@ size_gravatar: 80
 size_gravatar1: 50
 gravatar_web: "https://gravatar.com/emails"
 show_5: 3
+hours_pass_expired: 2
