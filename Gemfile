@@ -33,6 +33,9 @@ gem "bootstrap-sass", "3.4.1"
 gem "bootstrap-kaminari-views" # giao dien dep cho phan trang
 # giup phan trang
 gem "kaminari"
+
+# gui mail
+gem "figaro"
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution
   # and get a debugger console
