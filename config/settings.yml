@@ -19,3 +19,5 @@ image_limit: [500,500]
 image_types: "image/jpeg,image/gif,image/png"
 max_item_per_page: 20
 image_size: 50
+image_types: "image/jpeg,image/gif,image/png"
+max_item_following: 40

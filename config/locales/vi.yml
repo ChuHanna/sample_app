@@ -35,6 +35,12 @@ vi:
       delete: "Xóa"
     show:
       microposts: "Microposts"
+    follow:
+      submit: "Theo dõi"
+    unfollow:
+      submit: "Bỏ theo dõi"
+    show_follow:
+      view: "xem hồ sơ của tôi"
   sessions:
     new:
       header: "Đăng nhập"
@@ -83,6 +89,9 @@ vi:
     user_info:
       view_profile: "Xem hồ sơ của tôi"
       micropost: "micropost"
+    stats:
+      following: "following"
+      followers: "followers"
   microposts:
     micropost:
       posted: "Đã đăng %{time} trước."
@@ -122,7 +131,7 @@ vi:
   deleted_fail: "Xóa không thành công"
   micropost_invalid: "Micropost không hợp lệ"
   invalid_mess: "phải là một định dạng hình ảnh hợp lệ"
-  large_size_: "phải nhỏ hơn 5MB"
+  large_size: "phải nhỏ hơn 5MB"
   post: "Bài đăng"
   compose_new: "Soạn micropost mới..."
   large_size: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tệp nhỏ hơn."
