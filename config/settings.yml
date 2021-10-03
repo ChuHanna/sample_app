@@ -11,3 +11,11 @@ size_gravatar1: 50
 gravatar_web: "https://gravatar.com/emails"
 show_5: 3
 hours_pass_expired: 2
+maclencontent: 140
+max_feed_items: 5
+image_type: ["image/jpeg", "image/gif", "image/png"]
+max_image_size: 5
+image_limit: [500,500]
+image_types: "image/jpeg,image/gif,image/png"
+max_item_per_page: 20
+image_size: 50

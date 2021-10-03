@@ -24,20 +24,12 @@ class UsersController < ApplicationController
     end
   end
 
-  def show; end
-
-  def edit
-    user = User.find_by email: params[:email]
-    if user && !user.activated? && user.authenticated?(:activation, params[:id])
-      user.activate
-      log_in user
-      flash[:success] = t "activatedsuccess"
-      redirect_to user
-    else
-      flash[:danger] = t "activatedinvalid"
-      redirect_to root_url
-    end
+  def show
+    @microposts = @user.microposts.recent_posts.page(params[:page])
+                       .per Settings.max_feed_items
   end
+
+  def edit; end
 
   def update
     if @user.update_attribute user_params
