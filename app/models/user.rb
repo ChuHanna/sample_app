@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save :downcase_email
   # tao ra ma xac thuc dong thoi thuc hien luu ca doan ma hoa cua ma xac thuc
@@ -7,7 +8,7 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = Settings.valid
 
   PROPERTIES = %i(name email password password_confirmation).freeze
-  PASSWORD_PARAMS = %i(password password_confirmation)
+  PASSWORD_PARAMS = %i(password password_confirmation).freeze
   validates :email, presence: true,
     length: {minimum: Settings.min_email, maximum: Settings.max_email},
     format: {with: VALID_EMAIL_REGEX},
@@ -32,6 +33,10 @@ class User < ApplicationRecord
     return false if digest.nil?
 
     BCrypt::Password.new(digest).is_password? token
+  end
+
+  def feed
+    microposts
   end
 
   class << self

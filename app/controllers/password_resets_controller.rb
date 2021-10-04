@@ -1,5 +1,6 @@
 class PasswordResetsController < ApplicationController
-  before_action :find_by_user, :valid_user, :check_expiration, only: %i(edit update)
+  before_action :find_by_user, :valid_user,
+                :check_expiration, only: %i(edit update)
 
   def new; end
 
@@ -36,7 +37,7 @@ class PasswordResetsController < ApplicationController
   private
   def find_by_user
     @user = User.find_by email: params[:email]
-    return @user
+    return if @user
 
     flash[:danger] = t "usernotfound"
     redirect_to root_url

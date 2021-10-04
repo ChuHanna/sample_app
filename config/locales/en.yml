@@ -45,6 +45,7 @@ en:
       content: "This is the home page for the %{link} sample application."
       text: "Ruby on Rails Tutorial"
       sign_up: "Sign up now!"
+      micro_feed: "Micropost Feed"
   users:
     new:
       header: "Sign up"
@@ -63,6 +64,8 @@ en:
     user:
       sure: "You sure?"
       delete: "delete"
+    show:
+      microposts: "Microposts"
   sessions:
     new:
       header: "Log in"
@@ -107,7 +110,18 @@ en:
       header: "Reset password"
       submit: "Update password"
       comfirmation: "Confirmation"
-
+  shared:
+    user_info:
+      view_profile: "view my profile"
+      micropost: "micropost"
+    stats:
+      following: "following"
+      followers: "followers"
+  microposts:
+    micropost:
+      posted: "Posted %{time} ago."
+      delete: "delete"
+      sure?: "You"
   base_title: "Ruby on Rails Tutorial Sample App"
   thanks: "Thanks for joining and have a great day!"
   login: "Login"
@@ -136,3 +150,13 @@ en:
   passwordresetsuccess: "Password has been reset."
   empty: "can't be empty"
   passwordresetfailed: "Password reset failed"
+  micropost_created: "Micropost created!"
+  micropost_created_f: "Micropost created fail"
+  micropost_deleted: "Micropost deleted"
+  deleted_fail: "Deleted fail"
+  micropost_invalid: "Micropost invalid"
+  invalid_mess: "must be a valid image format"
+  large_size_: "should be less than 5MB"
+  post: "Post"
+  compose_new: "Compose new micropost..."
+  large_size: "Maximum file size is 5MB. Please choose a smaller file."

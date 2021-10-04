@@ -14,6 +14,7 @@ vi:
       content: "Đây là %{link} - trang chủ của ứng dụng mẫu."
       text: "Hướng dẫn sử dụng Ruby on Rails"
       sign_up: "Đăng ký ngay"
+      micro_feed: "Micropost Feed"
   users:
     new:
       header: "Đăng ký"
@@ -32,6 +33,8 @@ vi:
     user:
       sure: "Bạn chắc chắn chứ?"
       delete: "Xóa"
+    show:
+      microposts: "Microposts"
   sessions:
     new:
       header: "Đăng nhập"
@@ -76,6 +79,15 @@ vi:
       header: "Đặt lại mật khẩu"
       submit: "Cập nhật mật khẩu"
       comfirmation: "Xác nhận"
+  shared:
+    user_info:
+      view_profile: "Xem hồ sơ của tôi"
+      micropost: "micropost"
+  microposts:
+    micropost:
+      posted: "Đã đăng %{time} trước."
+      delete: "xóa"
+      sure?: "Bạn chắc chắn?"
   base_title: "Sample App hướng dẫn Ruby on Rails"
   thanks: "Cảm ơn bạn đã tham gia và có một ngày tuyệt vời!"
   login: "Đăng nhập"
@@ -104,3 +116,13 @@ vi:
   passwordresetsuccess: "Mật khẩu đã được đặt lại."
   empty: "không thể để trống"
   passwordresetfailed: "Đặt lại mật khẩu không thành công"
+  micropost_created: "Micropost đã tạo"
+  micropost_created_f: "Micropost tạo thất bại"
+  micropost_deleted: "Micropost đã bị xóa"
+  deleted_fail: "Xóa không thành công"
+  micropost_invalid: "Micropost không hợp lệ"
+  invalid_mess: "phải là một định dạng hình ảnh hợp lệ"
+  large_size_: "phải nhỏ hơn 5MB"
+  post: "Bài đăng"
+  compose_new: "Soạn micropost mới..."
+  large_size: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tệp nhỏ hơn."
