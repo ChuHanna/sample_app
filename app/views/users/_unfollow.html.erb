@@ -1,0 +1,4 @@
+<%= form_for(find_followed(@user),
+  html: {method: :delete}, remote: true) do |f| %>
+  <%= f.submit t(".submit"), class: "btn" %>
+<% end %>

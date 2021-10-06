@@ -66,6 +66,12 @@ en:
       delete: "delete"
     show:
       microposts: "Microposts"
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
+    show_follow:
+      view: "view my profile "
   sessions:
     new:
       header: "Log in"

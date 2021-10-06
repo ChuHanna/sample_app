@@ -2,6 +2,7 @@ class Micropost < ApplicationRecord
   belongs_to :user
   scope :newest, ->{order created_at: :desc}
   scope :recent_posts, ->{order created_at: :desc}
+  scope :find_microposts_user, ->(user){where user_id: user.following_ids << user.id}
   has_one_attached :image
   delegate :name, to: :user, prefix: true
 
